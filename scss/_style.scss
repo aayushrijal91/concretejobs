@@ -6,7 +6,7 @@ header {
     background: imgUrl("banner.png") right top;
     .header-top-bar {
         padding: 35px 0;
-    
+
         .header-button {
             padding: 27.5px 41px;
         }
@@ -15,19 +15,19 @@ header {
     .banner {
         padding: 45px 0 227px;
         position: relative;
-    
+
         .hero-heading {
             color: $black;
             letter-spacing: -0.02em;
             font-weight: 800;
             text-transform: uppercase;
             line-height: 0.85;
-    
+
             span {
                 color: $primary;
             }
         }
-    
+
         .sub-heading {
             padding: 11px 0;
             text-transform: uppercase;
@@ -37,7 +37,7 @@ header {
             border-bottom: 2px solid $dark;
             line-height: 1.28;
             margin-top: 29px;
-    
+
             span {
                 text-decoration: underline;
             }
@@ -55,6 +55,29 @@ header {
     }
 }
 
+section.form {
+    .form-top-bar {
+        letter-spacing: 0.015em;
+        font-weight: 700;
+        color: $white;
+        text-align: center;
+        background: $dark-grey;
+        text-transform: uppercase;
+        padding: 8.5px 16px;
+        position: relative;
+
+        &:after {
+            content: " ";
+            position: absolute;
+            left: 48%;
+            bottom: -31px;
+            border-top: 31px solid $dark-grey;
+            border-right: 27.5px solid transparent;
+            border-left: 27.5px solid transparent;
+            border-bottom: none;
+        }
+    }
+}
 
 footer {
     background: $black;
