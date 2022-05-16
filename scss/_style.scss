@@ -1,0 +1,15 @@
+@function imgUrl($file, $path: "background") {
+    @return url("../images/" + $path + "/" + $file) no-repeat;
+}
+
+footer {
+    background: $black;
+    color: $white;
+    font-weight: 600;
+    padding: 21px 0;
+    font-size: 0.875rem;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 0.75rem;
+    }
+}
