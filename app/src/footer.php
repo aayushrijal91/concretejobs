@@ -4,9 +4,9 @@
 			<div class="col-auto">
 				<div class="row no-gutters mb-3 mb-md-0 justify-content-center">
 					<div class="col-auto text-center">Copyright <?= date('Y') ?></div>
-					<div class="col-auto px-2 px-md-4 px-xl-5">/</div>
+					<div class="col-auto px-2 px-md-4 text-primary">|</div>
 					<div class="col-auto text-center"><?= $site ?></div>
-					<div class="col-auto px-2 px-md-4 px-xl-5">/</div>
+					<div class="col-auto px-2 px-md-4 text-primary">|</div>
 					<div class="col-auto text-center">All Rights Reserved
 					</div>
 				</div>
@@ -20,7 +20,7 @@
 	</div>
 </footer>
 <a href="javascript:" id="return-to-top">
-	<?= renderImg("arrow-up.webp", "icons") ?>
+	<?= renderImg("arrow-up.png", "icons") ?>
 </a>
 <script type="text/javascript" src="./assets/js/app.js?v=0.3"></script>
 </body>

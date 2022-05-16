@@ -146,12 +146,13 @@ h7,
 }
 
 $font-helvetica: "Helvetica Neue", sans-serif;
+$font-helvetica-condensed: "Helvetica Neue Condensed", sans-serif;
 $font-articulat: "Articulat", "sans-serif";
 
-$font-body: $font-helvetica;
+$font-body: $font-helvetica-condensed;
 
 $font-families: (
-    "gilroy": "Gilroy",
+    "helvetica-condensed": "Helvetica Neue Condensed",
     "helvetica": "Helvetica Neue",
     "articulat": "Articulat",
 );
@@ -187,6 +188,21 @@ $asset-path: "../webfonts/";
 @include font-face("Articulat", "ArticulatCF-Medium", 600);
 @include font-face("Articulat", "ArticulatCF-DemiBold", 700);
 @include font-face("Articulat", "ArticulatCF-Bold", 800);
+
+@mixin font-face-condensed($font-family, $font-file, $weight: "normal", $style: "normal") {
+    @font-face {
+        font-family: $font-family;
+        src: local($font-file), url($asset-path + $font-file + ".otf") format("opentype");
+        font-weight: $weight;
+        font-style: $style;
+    }
+}
+
+@include font-face("Helvetica Neue Condensed", "HelveticaLTStd-Cond", 400);
+@include font-face("Helvetica Neue Condensed", "HHelveticaNeue-Condensed", 500);
+@include font-face("Helvetica Neue Condensed", "HelveticaNeue-BoldCond", 600);
+@include font-face("Helvetica Neue Condensed", "HelveticaNeue-BlackCond", 800);
+@include font-face("Helvetica Neue Condensed", "HelveticaNeue-ExtBlackCond", 900);
 
 $font-weights: 300, 400, 500, 600, 700, 800, 900;
 

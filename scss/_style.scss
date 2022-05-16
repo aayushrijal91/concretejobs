@@ -2,6 +2,60 @@
     @return url("../images/" + $path + "/" + $file) no-repeat;
 }
 
+header {
+    background: imgUrl("banner.png") right top;
+    .header-top-bar {
+        padding: 35px 0;
+    
+        .header-button {
+            padding: 27.5px 41px;
+        }
+    }
+
+    .banner {
+        padding: 45px 0 227px;
+        position: relative;
+    
+        .hero-heading {
+            color: $black;
+            letter-spacing: -0.02em;
+            font-weight: 800;
+            text-transform: uppercase;
+            line-height: 0.85;
+    
+            span {
+                color: $primary;
+            }
+        }
+    
+        .sub-heading {
+            padding: 11px 0;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: $dark;
+            border-top: 2px solid $dark;
+            border-bottom: 2px solid $dark;
+            line-height: 1.28;
+            margin-top: 29px;
+    
+            span {
+                text-decoration: underline;
+            }
+        }
+
+        .banner-underlay {
+            background: $primary;
+            text-transform: uppercase;
+            padding: 34px 0;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            z-index: -1;
+        }
+    }
+}
+
+
 footer {
     background: $black;
     color: $white;

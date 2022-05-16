@@ -25,27 +25,41 @@
 <body>
 	<header>
 		<div class="header-top-bar">
-			<div class="container py-3">
+			<div class="container">
 				<div class="row justify-content-center justify-content-lg-between align-items-center">
 					<div class="col-auto">
 						<a href="./">
-							<img src="<?= $img_dir ?>/logo/logo.png" alt="Logo">
+							<?= renderImg("logo.png", "logo") ?>
 						</a>
 					</div>
-					<div class="col-auto col-lg font-weight-bold">
-						<div class="row justify-content-center justify-content-lg-end no-gutters align-items-center">
-							<div class="col-12 col-md-auto ml-lg-3 mr-2 mr-lg-0">
-								<a href="#form-quote" class="btn btn-block btn-primary rounded-0 text-white py-3 px-md-5">
-									Get A Quote
-								</a>
+					<div class="col-auto col-lg-7">
+						<div class="row justify-content-center justify-content-lg-between no-gutters align-items-center">
+							<div class="col-7">
+								<?= renderImg("master-builders.png", "logo") ?>
 							</div>
-							<div class="col-12 col-md-auto ml-lg-2">
-								<a href="tel:<?= $phone_number ?>" class="btn btn-block btn-secondary rounded-0 text-white py-3 px-md-5">
-									Call Us <?= $phone_number ?>
+							<div class="col-12 col-md-auto">
+								<a href="tel:<?= $phone_number ?>" class="btn btn-block btn-primary rounded-0 text-black line-height-1 h9 fw-800 header-button">
+									<?= $phone_number ?>
 								</a>
 							</div>
 						</div>
 					</div>
+				</div>
+			</div>
+		</div>
+		<div class="banner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="hero-heading h1"><span>Your one<br> stop</span> for all your concrete jobs.</div>
+						<div class="sub-heading h8">We specialise in concrete jobs for <span>Residential and rural properties!</span></div>
+					</div>
+				</div>
+			</div>
+			<div class="banner-underlay">
+				<div class="container">
+					<div class="h4 fw-900 text-black">Get local jobs done by locals!</div>
+					<div class="h14 fw-700 text-black">Quote within mins and job completion within days!</div>
 				</div>
 			</div>
 		</div>
