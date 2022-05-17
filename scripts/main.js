@@ -34,6 +34,7 @@ $('#show-more-services').on('click', () => {
     }
 });
 
+AOS.refresh();
 $(() => {
     let colorRangeSlider = $('.color-range-slider').slick({
         slidesToShow: 1,
@@ -42,7 +43,7 @@ $(() => {
         arrows: false,
         slidesToScroll: 1,
     });
-
+    AOS.refresh();
     $('.range-button-1').on('click', function () {
         colorRangeSlider.slick('slickGoTo', 0);
         $(this).addClass('active');
@@ -74,7 +75,7 @@ $(() => {
         $('.range-button-2').removeClass('active');
         $('.range-button-3').removeClass('active');
     });
-
+    AOS.refresh();
     var currentRangeTab = 1;
     var rangeTabUpperLimit = 3;
     $('.color-range-slider .slick-next').on('click', function (e) {
@@ -96,7 +97,7 @@ $(() => {
 
         changeActiveProcessNav();
     });
-
+    AOS.refresh();
     function changeActiveProcessNav() {
         if (currentRangeTab === 1) {
             $('.range-button-1').addClass('active');

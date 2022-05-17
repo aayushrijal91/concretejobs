@@ -50,13 +50,13 @@
 		<div class="banner">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-5">
+					<div class="col-lg-5" data-aos="fade-right">
 						<div class="hero-heading h1"><span>Your one<br> stop</span> for all your concrete jobs.</div>
 						<div class="sub-heading h8">We specialise in concrete jobs for <span>Residential and rural properties!</span></div>
 					</div>
 				</div>
 			</div>
-			<div class="banner-underlay">
+			<div class="banner-underlay" data-aos="fade-right">
 				<div class="container">
 					<div class="h4 fw-900 text-black">Get local jobs done by locals!</div>
 					<div class="h14 fw-700 text-black">Quote within mins and job completion within days!</div>
