@@ -18,26 +18,26 @@ include __DIR__ . '/header.php';
                     <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse">
                     <div class="row justify-content-center align-items-center form-content">
                         <div class="col-12 col-xl-auto d-flex align-items-center py-3 booking-header" data-aos="fade-right">
-                            <div class="px-4 px-lg-5 text-uppercase">
-                                <div class="h3 fw-800 line-height-3"><span class="text-primary">Free</span> Measure<br> and quote </div>
+                            <div class="px-4 px-lg-5 text-uppercase text-center text-md-left">
+                                <div class="h3 fw-800 line-height-3"><span class="text-primary">Free</span> Measure<br class="d-none d-md-block"> and quote </div>
                                 <div class="h5 text-black fw-900">for all services</div>
                             </div>
                         </div>
                         <div class="col-12 col-lg pl-xl-5" data-aos="fade-left">
                             <div class="row">
-                                <div class="col-12 col-md-6 col-lg-4 py-2">
+                                <div class="col-12 col-md-6 col-lg-4 py-1 py-md-2">
                                     <input class="form-control border-0 rounded-0 bg-grey" type="text" placeholder="Your Name" name="name" required>
                                 </div>
-                                <div class="col-12 col-md-6 col-lg-4 py-2">
+                                <div class="col-12 col-md-6 col-lg-4 py-1 py-md-2">
                                     <input class="form-control border-0 rounded-0 bg-grey" type="tel" placeholder="Your Number" name="phone" required>
                                 </div>
-                                <div class="col-12 col-md-6 col-lg-4 py-2">
+                                <div class="col-12 col-md-6 col-lg-4 py-1 py-md-2">
                                     <input class="form-control border-0 rounded-0 bg-grey" type="email" placeholder="Your Email" name="email" required>
                                 </div>
-                                <div class="col-12 col-md-6 col-lg-4 py-2">
+                                <div class="col-12 col-md-6 col-lg-4 py-1 py-md-2">
                                     <input class="form-control border-0 rounded-0 bg-grey" type="text" placeholder="Your Location" name="location" required>
                                 </div>
-                                <div class="col-12 col-md-6 col-lg-4 py-2">
+                                <div class="col-12 col-md-6 col-lg-4 py-1 py-md-2">
                                     <select name="service" class="form-control border-0 rounded-0 bg-grey" required>
                                         <option selected disabled>Service You Require</option>
                                         <option>1</option>
@@ -68,15 +68,15 @@ include __DIR__ . '/header.php';
                 <div class="text-white">Quote within mins and job</div>
                 <div class="text-primary">Completion within days!</div>
             </div>
-            <div class="col-auto" data-aos="fade-left">
+            <div class="col-auto pt-2 pt-md-0" data-aos="fade-left">
                 <div class="row no-gutters justify-content-center">
-                    <div class="col-auto px-2">
+                    <div class="col-auto px-1 px-md-2">
                         <a href="tel:<?= $phone_number ?>" class="btn btn-block btn-primary rounded-0 text-black line-height-1 h9 fw-800 quick-contact-button">
                             Book NOw
                         </a>
                     </div>
 
-                    <div class="col-auto px-2">
+                    <div class="col col-md-auto px-1 px-md-2">
                         <a href="tel:<?= $phone_number ?>" class="btn btn-block border-primary rounded-0 text-white line-height-1 h9 fw-800 quick-contact-button">
                             Free Onsite Quote &amp; Inspection
                         </a>
@@ -270,14 +270,14 @@ include __DIR__ . '/header.php';
                 <div class="text-white">We Have a wide range <span class="text-primary">of concrete colours</span></div>
             </div>
             <div class="col-auto" data-aos="fade-left">
-                <div class="row no-gutters justify-content-center">
-                    <div class="col-auto px-2">
+                <div class="row no-gutters justify-content-center pt-3 pt-md-0">
+                    <div class="col-auto px-1 px-md-2">
                         <a href="tel:<?= $phone_number ?>" class="btn btn-block btn-primary rounded-0 text-black line-height-1 h9 fw-800 color-range-button">
                             Book NOw
                         </a>
                     </div>
 
-                    <div class="col-auto px-2">
+                    <div class="col-auto px-1 px-md-2">
                         <a href="tel:<?= $phone_number ?>" class="btn btn-block border-primary rounded-0 text-white line-height-1 h9 fw-800 color-range-button">
                             Free Onsite Quote &amp; Inspection
                         </a>
@@ -287,7 +287,7 @@ include __DIR__ . '/header.php';
         </div>
 
         <div class="row">
-            <div class="col-9">
+            <div class="col-12 col-md-9 px-0 px-md-3 pb-3 pb-md-0">
                 <div class="color-range-slider">
                     <div class="color-range-slider-content range-1">
                         <?= renderImg("charcoal.png", "lib") ?>
@@ -303,7 +303,7 @@ include __DIR__ . '/header.php';
                     </div>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-md-3">
                 <div class="color-range-nav-button range-button-1 active mb-4">
                     <div class="d-flex align-items-center">
                         <div class="primary-block"></div>

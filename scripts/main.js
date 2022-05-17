@@ -24,6 +24,8 @@ $('#return-to-top').on('click', () => {
     }, 500);
 });
 
+AOS.refresh();
+
 $('#show-more-services').on('click', () => {
     $('.see-more-services').slideToggle();
 
@@ -35,6 +37,7 @@ $('#show-more-services').on('click', () => {
 });
 
 AOS.refresh();
+
 $(() => {
     let colorRangeSlider = $('.color-range-slider').slick({
         slidesToShow: 1,

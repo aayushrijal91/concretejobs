@@ -120,7 +120,11 @@ section.form {
     }
 
     .form-content {
-        padding: 58px 0 93px;
+        padding: 45px 0 34px;
+
+        @include media-breakpoint-up(md) {
+            padding: 58px 0 93px;
+        }
 
         @include media-breakpoint-up(xl) {
             .booking-header {
@@ -148,6 +152,7 @@ section.form {
 
             @include media-breakpoint-down(sm) {
                 font-size: 0.875rem;
+                padding: 6px 24px !important;
             }
 
             &::placeholder {
@@ -166,18 +171,36 @@ section.form {
 }
 
 section.quick-contact {
-    background: $dark-grey imgUrl("quick-contact.png");
-    background-size: contain;
-    padding: 80px 0;
+    background: $dark-grey imgUrl("quick-contact-sm.png");
+    padding: 43px 0 50px;
+    background-size: cover;
+
+    @include media-breakpoint-up(md) {
+        background: $dark-grey imgUrl("quick-contact.png");
+        background-size: contain;
+        padding: 80px 0;
+    }
 
     .quick-contact-button {
         padding: 27.5px 41px;
         text-transform: uppercase;
+
+        @include media-breakpoint-down(sm) {
+            padding: 16.5px 18px;
+
+            &.h9 {
+                font-size: 0.8256rem;
+            }
+        }
     }
 }
 
 section.services {
-    padding: 38px 0 92px;
+    padding: 6px 0 37px;
+
+    @include media-breakpoint-up(md) {
+        padding: 38px 0 92px;
+    }
 
     .service-card {
         .service-caption {
@@ -195,7 +218,9 @@ section.services {
             min-height: 141px;
 
             @include media-breakpoint-down(sm) {
-                font-size: 1rem;
+                font-size: 1.38rem;
+                min-height: 104px;
+                padding: 16px 16px 16px 50px;
             }
 
             .primary-block {
@@ -219,6 +244,21 @@ section.color-range {
     .color-range-button {
         padding: 27.5px 41px;
         text-transform: uppercase;
+
+        @include media-breakpoint-down(sm) {
+            padding: 16.5px 18px;
+
+            &.h9 {
+                font-size: 0.8256rem;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        .color-range-slider .color-range-slider-content img {
+            height: 555px;
+            object-fit: cover;
+        }
     }
 
     .color-range-nav-button {
@@ -243,10 +283,19 @@ section.color-range {
             height: 52px;
             width: 52px;
             background-color: $primary;
+
+            @include media-breakpoint-down(sm) {
+                width: 52px;
+                height: 37px;
+            }
         }
 
         &.active {
             opacity: 1;
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding: 17px 32px;
         }
     }
 }
