@@ -4,8 +4,12 @@ include __DIR__ . '/header.php';
 ?>
 
 <section class="form">
-    <div class="form-top-bar h7">
-        high standard and high-quality work
+    <div class="form-top-bar">
+        <div class="h7 d-none d-md-block">high standard and high-quality work</div>
+        <div class="d-md-none">
+            <div class="h4 fw-900 text-black">Get local jobs done by locals!</div>
+            <div class="h14 fw-700 text-black">Quote within mins and job completion within days!</div>
+        </div>
     </div>
     <div class="container-fluid">
         <div class="row no-gutters justify-content-center">
@@ -60,7 +64,7 @@ include __DIR__ . '/header.php';
 <section class="quick-contact">
     <div class="container">
         <div class="row justify-content-between align-items-center">
-            <div class="col-auto text-uppercase h2 fw-900 line-height-1 letter-spacing-n02"data-aos="fade-right">
+            <div class="col-auto text-uppercase h2 fw-900 line-height-1 letter-spacing-n02" data-aos="fade-right">
                 <div class="text-white">Quote within mins and job</div>
                 <div class="text-primary">Completion within days!</div>
             </div>
@@ -262,7 +266,7 @@ include __DIR__ . '/header.php';
 <section class="color-range">
     <div class="container">
         <div class="row justify-content-between align-items-center py-5">
-            <div class="col-auto col-lg-6 text-uppercase h2 fw-900 line-height-1 letter-spacing-n02"  data-aos="fade-right">
+            <div class="col-auto col-lg-6 text-uppercase h2 fw-900 line-height-1 letter-spacing-n02" data-aos="fade-right">
                 <div class="text-white">We Have a wide range <span class="text-primary">of concrete colours</span></div>
             </div>
             <div class="col-auto" data-aos="fade-left">

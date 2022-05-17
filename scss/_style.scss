@@ -3,18 +3,33 @@
 }
 
 header {
-    background: imgUrl("banner.png") right top;
+    @include media-breakpoint-up(md) {
+        background: imgUrl("banner.png") right top;
+    }
+
     .header-top-bar {
         padding: 35px 0;
 
         .header-button {
             padding: 27.5px 41px;
+
+            @include media-breakpoint-down(sm) {
+                padding: 16.5px;
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding: 16px 0;
         }
     }
 
     .banner {
-        padding: 45px 0 227px;
         position: relative;
+        padding: 13px 0 26px;
+
+        @include media-breakpoint-up(md) {
+            padding: 45px 0 227px;
+        }
 
         .hero-heading {
             color: $black;
@@ -41,6 +56,11 @@ header {
             span {
                 text-decoration: underline;
             }
+
+            @include media-breakpoint-down(sm) {
+                border-top: 1px solid $dark;
+                border-bottom: 1px solid $dark;
+            }
         }
 
         .banner-underlay {
@@ -51,6 +71,10 @@ header {
             width: 100%;
             bottom: 0;
             z-index: -1;
+
+            @include media-breakpoint-down(sm) {
+                display: none;
+            }
         }
     }
 }
@@ -75,6 +99,23 @@ section.form {
             border-right: 27.5px solid transparent;
             border-left: 27.5px solid transparent;
             border-bottom: none;
+        }
+
+        @include media-breakpoint-down(sm) {
+            background: $primary;
+            color: $black;
+            padding: 23px 16px;
+
+            &:after {
+                content: " ";
+                position: absolute;
+                left: 44%;
+                bottom: -31px;
+                border-top: 31px solid $primary;
+                border-right: 27.5px solid transparent;
+                border-left: 27.5px solid transparent;
+                border-bottom: none;
+            }
         }
     }
 

@@ -26,18 +26,24 @@
 	<header>
 		<div class="header-top-bar">
 			<div class="container">
-				<div class="row justify-content-center justify-content-lg-between align-items-center">
-					<div class="col-auto">
+				<div class="row justify-content-between align-items-center">
+					<div class="col-6 col-md-auto">
 						<a href="./">
 							<?= renderImg("logo.png", "logo") ?>
 						</a>
 					</div>
-					<div class="col-auto col-lg-6">
+					<div class="col-6 d-md-none"><?= renderImg("master-builders.png", "logo") ?></div>
+					<div class="col-12 col-md-auto col-lg-6 pt-2 pt-md-0">
 						<div class="row justify-content-center justify-content-lg-between no-gutters align-items-center">
-							<div class="col-7">
+							<div class="col-7 d-none d-lg-block">
 								<?= renderImg("master-builders.png", "logo") ?>
 							</div>
-							<div class="col-12 col-md-auto">
+							<div class="col-6 d-md-none pr-1">
+								<a href="#form" class="btn btn-block btn-primary rounded-0 text-black line-height-1 h9 fw-800 header-button">
+									BOOK NOW
+								</a>
+							</div>
+							<div class="col-6 col-md-auto pl-1 pl-md-0">
 								<a href="tel:<?= $phone_number ?>" class="btn btn-block btn-primary rounded-0 text-black line-height-1 h9 fw-800 header-button">
 									<?= $phone_number ?>
 								</a>
@@ -63,4 +69,5 @@
 				</div>
 			</div>
 		</div>
+		<?= renderImg("banner-sm.png","background", "d-md-none") ?>
 	</header>
