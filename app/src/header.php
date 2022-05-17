@@ -32,13 +32,13 @@
 							<?= renderImg("logo.png", "logo") ?>
 						</a>
 					</div>
-					<div class="col-auto col-lg-7">
+					<div class="col-auto col-lg-6">
 						<div class="row justify-content-center justify-content-lg-between no-gutters align-items-center">
 							<div class="col-7">
 								<?= renderImg("master-builders.png", "logo") ?>
 							</div>
 							<div class="col-12 col-md-auto">
-								<a href="tel:<?= $phone_number ?>" clas	s="btn btn-block btn-primary rounded-0 text-black line-height-1 h9 fw-800 header-button">
+								<a href="tel:<?= $phone_number ?>" class="btn btn-block btn-primary rounded-0 text-black line-height-1 h9 fw-800 header-button">
 									<?= $phone_number ?>
 								</a>
 							</div>

@@ -57,4 +57,206 @@ include __DIR__ . '/header.php';
     </div>
 </section>
 
+<section class="quick-contact">
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-auto">
+                <div class="text-white line-height-1 letter-spacing-n02 fw-900 h2 text-uppercase">Quote within mins and job</div>
+                <div class="text-primary line-height-1 letter-spacing-n02 fw-900 h2">Completion within days!</div>
+            </div>
+            <div class="col-auto">
+                <div class="row no-gutters justify-content-center">
+                    <div class="col-auto px-2">
+                        <a href="tel:<?= $phone_number ?>" class="btn btn-block btn-primary rounded-0 text-black line-height-1 h9 fw-800 quick-contact-button">
+                            Book NOw
+                        </a>
+                    </div>
+
+                    <div class="col-auto px-2">
+                        <a href="tel:<?= $phone_number ?>" class="btn btn-block border-primary rounded-0 text-white line-height-1 h9 fw-800 quick-contact-button">
+                            Free Onsite Quote &amp; Inspection
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services">
+    <div class="container">
+        <div class="services-wrapper">
+            <div class="row">
+                <div class="col-md-6 col-lg-4 py-3">
+                    <div class="service-card">
+                        <?= renderImg("service-1.png", "lib", "w-100") ?>
+                        <div class="service-caption">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col-auto">
+                                    <div class="primary-block"></div>
+                                </div>
+                                <div class="col">Concrete driveway replacement</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 py-3">
+                    <div class="service-card">
+                        <?= renderImg("service-2.png", "lib", "w-100") ?>
+                        <div class="service-caption">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col-auto">
+                                    <div class="primary-block"></div>
+                                </div>
+                                <div class="col">Concrete shed slabs</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 py-3">
+                    <div class="service-card">
+                        <?= renderImg("service-3.png", "lib", "w-100") ?>
+                        <div class="service-caption">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col-auto">
+                                    <div class="primary-block"></div>
+                                </div>
+                                <div class="col">New Concrete driveways</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 py-3">
+                    <div class="service-card">
+                        <?= renderImg("service-4.png", "lib", "w-100") ?>
+                        <div class="service-caption">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col-auto">
+                                    <div class="primary-block"></div>
+                                </div>
+                                <div class="col">Polished concrete</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 py-3">
+                    <div class="service-card">
+                        <?= renderImg("service-5.png", "lib", "w-100") ?>
+                        <div class="service-caption">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col-auto">
+                                    <div class="primary-block"></div>
+                                </div>
+                                <div class="col">Concrete restoration</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 py-3">
+                    <div class="service-card">
+                        <?= renderImg("service-6.png", "lib", "w-100") ?>
+                        <div class="service-caption">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col-auto">
+                                    <div class="primary-block"></div>
+                                </div>
+                                <div class="col">Concrete footpaths</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="see-more-services">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 py-3">
+                        <div class="service-card">
+                            <?= renderImg("service-1.png", "lib", "w-100") ?>
+                            <div class="service-caption">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col-auto">
+                                        <div class="primary-block"></div>
+                                    </div>
+                                    <div class="col">Concrete driveway replacement</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 py-3">
+                        <div class="service-card">
+                            <?= renderImg("service-2.png", "lib", "w-100") ?>
+                            <div class="service-caption">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col-auto">
+                                        <div class="primary-block"></div>
+                                    </div>
+                                    <div class="col">Concrete shed slabs</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 py-3">
+                        <div class="service-card">
+                            <?= renderImg("service-3.png", "lib", "w-100") ?>
+                            <div class="service-caption">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col-auto">
+                                        <div class="primary-block"></div>
+                                    </div>
+                                    <div class="col">New Concrete driveways</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 py-3">
+                        <div class="service-card">
+                            <?= renderImg("service-4.png", "lib", "w-100") ?>
+                            <div class="service-caption">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col-auto">
+                                        <div class="primary-block"></div>
+                                    </div>
+                                    <div class="col">Polished concrete</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 py-3">
+                        <div class="service-card">
+                            <?= renderImg("service-5.png", "lib", "w-100") ?>
+                            <div class="service-caption">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col-auto">
+                                        <div class="primary-block"></div>
+                                    </div>
+                                    <div class="col">Concrete restoration</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 py-3">
+                        <div class="service-card">
+                            <?= renderImg("service-6.png", "lib", "w-100") ?>
+                            <div class="service-caption">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col-auto">
+                                        <div class="primary-block"></div>
+                                    </div>
+                                    <div class="col">Concrete footpaths</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center pt-4">
+            <div class="col-12">
+                <button id="show-more-services" class="btn btn-block btn-dark-grey rounded-0 text-white py-4 line-height-2 h10 fw-700 text-uppercase">
+                    See More Services
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
 <?php include __DIR__ . '/footer.php'; ?>

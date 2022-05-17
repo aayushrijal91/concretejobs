@@ -23,3 +23,13 @@ $('#return-to-top').on('click', () => {
         scrollTop: 0
     }, 500);
 });
+
+$('#show-more-services').on('click', () => {
+    $('.see-more-services').slideToggle();
+
+    if ($('#show-more-services').text().trim() == "See More Services") {
+        $('#show-more-services').html("See Less Services");
+    } else {
+        $('#show-more-services').html("See More Services");
+    }
+});

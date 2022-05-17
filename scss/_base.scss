@@ -9,6 +9,11 @@ body {
     padding: 0;
 }
 
+.btn:focus {
+    outline: none;
+    box-shadow: 0;
+}
+
 // Rounded buttons
 @for $i from 1 through 10 {
     .rounded-#{$i} {
