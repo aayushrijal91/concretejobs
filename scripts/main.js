@@ -33,3 +33,94 @@ $('#show-more-services').on('click', () => {
         $('#show-more-services').html("See More Services");
     }
 });
+
+$(() => {
+    let colorRangeSlider = $('.color-range-slider').slick({
+        slidesToShow: 1,
+        vertical: true,
+        verticalSwiping: true,
+        arrows: false,
+        slidesToScroll: 1,
+    });
+
+    $('.range-button-1').on('click', function () {
+        colorRangeSlider.slick('slickGoTo', 0);
+        $(this).addClass('active');
+        $('.range-button-2').removeClass('active');
+        $('.range-button-3').removeClass('active');
+        $('.range-button-4').removeClass('active');
+    });
+
+    $('.range-button-2').on('click', function () {
+        colorRangeSlider.slick('slickGoTo', 1);
+        $(this).addClass('active');
+        $('.range-button-1').removeClass('active');
+        $('.range-button-3').removeClass('active');
+        $('.range-button-4').removeClass('active');
+    });
+
+    $('.range-button-3').on('click', function () {
+        colorRangeSlider.slick('slickGoTo', 2);
+        $(this).addClass('active');
+        $('.range-button-1').removeClass('active');
+        $('.range-button-2').removeClass('active');
+        $('.range-button-4').removeClass('active');
+    });
+
+    $('.range-button-4').on('click', function () {
+        colorRangeSlider.slick('slickGoTo', 3);
+        $(this).addClass('active');
+        $('.range-button-1').removeClass('active');
+        $('.range-button-2').removeClass('active');
+        $('.range-button-3').removeClass('active');
+    });
+
+    var currentRangeTab = 1;
+    var rangeTabUpperLimit = 3;
+    $('.color-range-slider .slick-next').on('click', function (e) {
+        currentRangeTab += 1;
+
+        if (currentRangeTab > rangeTabUpperLimit) {
+            currentRangeTab = 1;
+        }
+
+        changeActiveProcessNav();
+    });
+
+    $('.color-range-slider .slick-prev').on('click', function (e) {
+        currentRangeTab -= 1;
+
+        if (currentRangeTab === 0) {
+            currentRangeTab = rangeTabUpperLimit;
+        }
+
+        changeActiveProcessNav();
+    });
+
+    function changeActiveProcessNav() {
+        if (currentRangeTab === 1) {
+            $('.range-button-1').addClass('active');
+            $('.range-button-2').removeClass('active');
+            $('.range-button-3').removeClass('active');
+            $('.range-button-4').removeClass('active');
+        }
+        else if (currentRangeTab === 2) {
+            $('.range-button-1').removeClass('active');
+            $('.range-button-2').addClass('active');
+            $('.range-button-3').removeClass('active');
+            $('.range-button-4').removeClass('active');
+        }
+        else if (currentRangeTab === 3) {
+            $('.range-button-1').removeClass('active');
+            $('.range-button-2').removeClass('active');
+            $('.range-button-3').addClass('active');
+            $('.range-button-4').removeClass('active');
+        }
+        else if (currentRangeTab === 4) {
+            $('.range-button-1').removeClass('active');
+            $('.range-button-2').removeClass('active');
+            $('.range-button-3').removeClass('active');
+            $('.range-button-4').addClass('active');
+        }
+    }
+})

@@ -15,13 +15,13 @@
 // @import "node_modules/bootstrap/scss/modal";
 
 //aos
-@import 'node_modules/aos/src/sass/core';
-@import 'node_modules/aos/src/sass/easing';
-@import 'node_modules/aos/src/sass/animations';
+// @import 'node_modules/aos/src/sass/core';
+// @import 'node_modules/aos/src/sass/easing';
+// @import 'node_modules/aos/src/sass/animations';
 
 //slick
-// @import "node_modules/slick-carousel/slick/slick.scss";
-// @import "node_modules/slick-carousel/slick/slick-theme.scss";
+@import "node_modules/slick-carousel/slick/slick.scss";
+@import "node_modules/slick-carousel/slick/slick-theme.scss";
 
 //fonts
 @import "fonts.scss";

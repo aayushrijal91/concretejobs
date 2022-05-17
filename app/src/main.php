@@ -60,9 +60,9 @@ include __DIR__ . '/header.php';
 <section class="quick-contact">
     <div class="container">
         <div class="row justify-content-between align-items-center">
-            <div class="col-auto">
-                <div class="text-white line-height-1 letter-spacing-n02 fw-900 h2 text-uppercase">Quote within mins and job</div>
-                <div class="text-primary line-height-1 letter-spacing-n02 fw-900 h2">Completion within days!</div>
+            <div class="col-auto text-uppercase h2 fw-900 line-height-1 letter-spacing-n02">
+                <div class="text-white">Quote within mins and job</div>
+                <div class="text-primary">Completion within days!</div>
             </div>
             <div class="col-auto">
                 <div class="row no-gutters justify-content-center">
@@ -254,6 +254,76 @@ include __DIR__ . '/header.php';
                 <button id="show-more-services" class="btn btn-block btn-dark-grey rounded-0 text-white py-4 line-height-2 h10 fw-700 text-uppercase">
                     See More Services
                 </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="color-range">
+    <div class="container">
+        <div class="row justify-content-between align-items-center py-5">
+            <div class="col-auto col-lg-6 text-uppercase h2 fw-900 line-height-1 letter-spacing-n02">
+                <div class="text-white">We Have a wide range <span class="text-primary">of concrete colours</span></div>
+            </div>
+            <div class="col-auto">
+                <div class="row no-gutters justify-content-center">
+                    <div class="col-auto px-2">
+                        <a href="tel:<?= $phone_number ?>" class="btn btn-block btn-primary rounded-0 text-black line-height-1 h9 fw-800 color-range-button">
+                            Book NOw
+                        </a>
+                    </div>
+
+                    <div class="col-auto px-2">
+                        <a href="tel:<?= $phone_number ?>" class="btn btn-block border-primary rounded-0 text-white line-height-1 h9 fw-800 color-range-button">
+                            Free Onsite Quote &amp; Inspection
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-9">
+                <div class="color-range-slider">
+                    <div class="color-range-slider-content range-1">
+                        <?= renderImg("charcoal.png", "lib") ?>
+                    </div>
+                    <div class="color-range-slider-content range-2">
+                        <?= renderImg("jet-black.png", "lib") ?>
+                    </div>
+                    <div class="color-range-slider-content range-3">
+                        <?= renderImg("graphite.png", "lib") ?>
+                    </div>
+                    <div class="color-range-slider-content range-4">
+                        <?= renderImg("grey-mist.png", "lib") ?>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="color-range-nav-button range-button-1 active mb-4">
+                    <div class="d-flex align-items-center">
+                        <div class="primary-block"></div>
+                        <div class="pl-4">Charcoal</div>
+                    </div>
+                </div>
+                <div class="color-range-nav-button range-button-2 mb-4">
+                    <div class="d-flex align-items-center">
+                        <div class="primary-block"></div>
+                        <div class="pl-4">Jet Black</div>
+                    </div>
+                </div>
+                <div class="color-range-nav-button range-button-3 mb-4">
+                    <div class="d-flex align-items-center">
+                        <div class="primary-block"></div>
+                        <div class="pl-4">Graphite</div>
+                    </div>
+                </div>
+                <div class="color-range-nav-button range-button-4 mb-4">
+                    <div class="d-flex align-items-center">
+                        <div class="primary-block"></div>
+                        <div class="pl-4">Grey Mist</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -137,7 +137,7 @@ section.quick-contact {
 
 section.services {
     padding: 38px 0 92px;
-    
+
     .service-card {
         .service-caption {
             background: #f6f6f6;
@@ -168,6 +168,45 @@ section.services {
 
     .see-more-services {
         display: none;
+    }
+}
+
+section.color-range {
+    background-color: $dark-grey;
+    padding-top: 29px;
+
+    .color-range-button {
+        padding: 27.5px 41px;
+        text-transform: uppercase;
+    }
+
+    .color-range-nav-button {
+        cursor: pointer;
+        background: #252525;
+        padding: 25px 32px;
+        color: $white;
+        text-transform: uppercase;
+        letter-spacing: -0.02em;
+        line-height: 1;
+        font-size: 1.875rem; // 30px
+        font-weight: 700;
+        border-bottom: 4px solid $primary;
+        opacity: 0.4;
+        transition: 0.2s all ease-in-out;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 1rem;
+        }
+
+        .primary-block {
+            height: 52px;
+            width: 52px;
+            background-color: $primary;
+        }
+
+        &.active {
+            opacity: 1;
+        }
     }
 }
 
