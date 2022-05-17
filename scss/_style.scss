@@ -77,6 +77,50 @@ section.form {
             border-bottom: none;
         }
     }
+
+    .form-content {
+        padding: 58px 0 93px;
+
+        @include media-breakpoint-up(xl) {
+            .booking-header {
+                border-right: 2.05px solid #e1e1e1;
+            }
+        }
+
+        input,select {
+            font-weight: 600;
+            font-family: $font-helvetica;
+        }
+        
+        input,
+        select,
+        button {
+            font-style: italic;
+            padding: 0 40.05px !important;
+            height: 50px;
+            font-size: 1.09375rem; // 17.5px
+
+            @include media-breakpoint-up(lg) {
+                height: 69.56px;
+            }
+
+            @include media-breakpoint-down(sm) {
+                font-size: 0.875rem;
+            }
+
+            &::placeholder {
+                color: #494949;
+            }
+        }
+
+        select {
+            color: #494949;
+
+            option {
+                font-weight: 600;
+            }
+        }
+    }
 }
 
 footer {
