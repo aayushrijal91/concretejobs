@@ -2,9 +2,8 @@
 include __DIR__ . './env.php';
 
 $site = "Superstruct Group";
-$phone_number = "0478 164 362";
+$phone_number = "1300 618 325";
 $admin_email = 'arijal@aiims.com.au';
-$bcc_email = "";
 $no_reply_email = 'no-reply@icfitouts.com.au';
 $recaptcha_client_secret = $client_secret;
 $recaptcha_server_secret = $server_secret;
