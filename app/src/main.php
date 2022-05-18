@@ -17,8 +17,8 @@ include __DIR__ . '/header.php';
                 <form action="./src/form.php" method="POST">
                     <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse">
                     <div class="row justify-content-center align-items-center form-content">
-                        <div class="col-12 col-md-6 col-xl-auto d-flex align-items-center py-3 booking-header" data-aos="fade-right">
-                            <div class="px-4 px-lg-5 text-uppercase text-center text-md-left">
+                        <div class="col-12 col-md-6 col-lg-5 col-xl-auto d-flex align-items-center py-3 booking-header" data-aos="fade-right">
+                            <div class="px-4 px-xl-5 text-uppercase text-center text-md-left">
                                 <div class="h3 fw-800 line-height-3"><span class="text-primary">Free</span> Measure<br class="d-none d-md-block"> and quote </div>
                                 <div class="h5 text-black fw-900">for all services</div>
                             </div>
@@ -68,9 +68,9 @@ include __DIR__ . '/header.php';
                 <div class="text-white">Quote within mins and job</div>
                 <div class="text-primary">Completion within days!</div>
             </div>
-            <div class="col-auto pt-2 pt-md-4 pt-lg-0" data-aos="fade-left">
+            <div class="col-auto pt-2 pt-md-4 pt-xl-0" data-aos="fade-left">
                 <div class="row no-gutters justify-content-center">
-                    <div class="col-auto px-1 px-lg-2">
+                    <div class="col-auto px-1 px-xl-2">
                         <a href="tel:<?= $phone_number ?>" class="btn btn-block btn-primary rounded-0 text-black line-height-1 h9 fw-800 quick-contact-button">
                             Book NOw
                         </a>
@@ -270,7 +270,7 @@ include __DIR__ . '/header.php';
                 <div class="text-white">We Have a wide range <span class="text-primary">of concrete colours</span></div>
             </div>
             <div class="col-auto" data-aos="fade-left">
-                <div class="row no-gutters justify-content-center pt-3 pt-md-4 pt-lg-0">
+                <div class="row no-gutters justify-content-center pt-3 pt-md-4 pt-xl-0">
                     <div class="col-auto px-1 px-lg-2">
                         <a href="tel:<?= $phone_number ?>" class="btn btn-block btn-primary rounded-0 text-black line-height-1 h9 fw-800 color-range-button">
                             Book NOw
@@ -287,7 +287,7 @@ include __DIR__ . '/header.php';
         </div>
 
         <div class="row">
-            <div class="col-12 col-lg-9 px-0 px-md-3 pb-3 pb-md-4 pb-lg-0">
+            <div class="col-12 col-xl-9 px-0 px-md-3 pb-3 pb-md-4 pb-xl-0">
                 <div class="color-range-slider">
                     <div class="color-range-slider-content range-1">
                         <?= renderImg("charcoal.png", "lib") ?>
@@ -303,9 +303,9 @@ include __DIR__ . '/header.php';
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-3">
+            <div class="col-12 col-xl-3">
                 <div class="row no-gutters">
-                    <div class="col-12 col-md-6 col-lg-12 px-md-2 px-lg-0">
+                    <div class="col-12 col-md-6 col-xl-12 px-md-2 px-xl-0">
                         <div class="color-range-nav-button range-button-1 active mb-4">
                             <div class="d-flex align-items-center">
                                 <div class="primary-block"></div>
@@ -313,7 +313,7 @@ include __DIR__ . '/header.php';
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-12 px-md-2 px-lg-0">
+                    <div class="col-12 col-md-6 col-xl-12 px-md-2 px-xl-0">
                         <div class="color-range-nav-button range-button-2 mb-4">
                             <div class="d-flex align-items-center">
                                 <div class="primary-block"></div>
@@ -321,7 +321,7 @@ include __DIR__ . '/header.php';
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-12 px-md-2 px-lg-0">
+                    <div class="col-12 col-md-6 col-xl-12 px-md-2 px-xl-0">
                         <div class="color-range-nav-button range-button-3 mb-4">
                             <div class="d-flex align-items-center">
                                 <div class="primary-block"></div>
@@ -329,7 +329,7 @@ include __DIR__ . '/header.php';
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-12 px-md-2 px-lg-0">
+                    <div class="col-12 col-md-6 col-xl-12 px-md-2 px-xl-0">
                         <div class="color-range-nav-button range-button-4 mb-4">
                             <div class="d-flex align-items-center">
                                 <div class="primary-block"></div>

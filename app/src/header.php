@@ -56,12 +56,13 @@
 		<div class="banner">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-6 col-xxl-5" data-aos="fade-right">
+					<div class="col-xl-6 col-xxl-5" data-aos="fade-right">
 						<div class="hero-heading h1"><span>Your one<br> stop</span> for all your concrete jobs.</div>
 						<div class="sub-heading h8">We specialise in concrete jobs for <span>Residential and rural properties!</span></div>
 					</div>
 				</div>
 			</div>
+			<?= renderImg("banner.png", "background", "d-none d-md-block d-xl-none") ?>
 			<div class="banner-underlay" data-aos="fade-right">
 				<div class="container">
 					<div class="h4 fw-900 text-black">Get local jobs done by locals!</div>
@@ -69,5 +70,5 @@
 				</div>
 			</div>
 		</div>
-		<?= renderImg("banner-sm.png","background", "d-md-none") ?>
+		<?= renderImg("banner-sm.png", "background", "d-md-none") ?>
 	</header>

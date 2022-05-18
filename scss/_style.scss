@@ -3,7 +3,7 @@
 }
 
 header {
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
         background: imgUrl("banner.png") right top;
     }
 
@@ -84,10 +84,6 @@ header {
             text-transform: uppercase;
             padding: 34px 0;
             width: 100%;
-
-            @include media-breakpoint-only(md) {
-                margin-top: 48px;
-            }
             
             @include media-breakpoint-up(xl) {
                 position: absolute;
@@ -207,7 +203,7 @@ section.quick-contact {
         background-size: cover;
         padding: 80px 0;
     }
-
+    
     @include media-breakpoint-up(lg) {
         background-size: contain;
     }
@@ -248,7 +244,7 @@ section.services {
             align-items: center;
             min-height: 141px;
 
-            @include media-breakpoint-down(md) {
+            @include media-breakpoint-down(lg) {
                 padding: 24px 16px;
             font-size: 1.38rem;
             }
