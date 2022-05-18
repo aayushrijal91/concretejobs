@@ -167,8 +167,7 @@ $asset-path: "../webfonts/";
         font-family: $font-family;
         src: local($font-file), url($asset-path + $font-file + ".woff") format("woff"),
             url($asset-path + $font-file + ".woff2") format("woff2"),
-            url($asset-path + $font-file + ".eot") format("embedded-opentype"),
-            url($asset-path + $font-file + ".ttf") format("truetype");
+            url($asset-path + $font-file + ".eot") format("embedded-opentype");
         font-weight: $weight;
         font-style: $style;
     }
@@ -194,11 +193,11 @@ $asset-path: "../webfonts/";
     }
 }
 
-@include font-face("Helvetica Neue Condensed", "HelveticaLTStd-Cond", 400);
-@include font-face("Helvetica Neue Condensed", "HHelveticaNeue-Condensed", 500);
-@include font-face("Helvetica Neue Condensed", "HelveticaNeue-BoldCond", 600);
-@include font-face("Helvetica Neue Condensed", "HelveticaNeue-BlackCond", 800);
-@include font-face("Helvetica Neue Condensed", "HelveticaNeue-ExtBlackCond", 900);
+@include font-face-condensed("Helvetica Neue Condensed", "HelveticaLTStd-Cond", 400);
+@include font-face-condensed("Helvetica Neue Condensed", "HHelveticaNeue-Condensed", 500);
+@include font-face-condensed("Helvetica Neue Condensed", "HelveticaNeue-BoldCond", 600);
+@include font-face-condensed("Helvetica Neue Condensed", "HelveticaNeue-BlackCond", 800);
+@include font-face-condensed("Helvetica Neue Condensed", "HelveticaNeue-ExtBlackCond", 900);
 
 $font-weights: 300, 400, 500, 600, 700, 800, 900;
 
