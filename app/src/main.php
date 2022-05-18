@@ -40,12 +40,12 @@ include __DIR__ . '/header.php';
                                 <div class="col-12 col-lg-6 col-lg-4 py-1 py-md-2">
                                     <select name="service" class="form-control border-0 rounded-0 bg-grey" required>
                                         <option selected disabled>Service You Require</option>
-                                        <option>1</option>
-                                        <option>1</option>
-                                        <option>1</option>
-                                        <option>1</option>
-                                        <option>1</option>
-                                        <option>1</option>
+                                        <option>Concrete Driveway Replacement</option>
+                                        <option>Concrete Shed Slabs</option>
+                                        <option>New Concrete Driveways</option>
+                                        <option>Polished Concrete</option>
+                                        <option>Concrete Restoration</option>
+                                        <option>Concrete Footpaths</option>
                                     </select>
                                 </div>
                                 <div class="col-12 col-lg-6 col-lg-4 py-2">

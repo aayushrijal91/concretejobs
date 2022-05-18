@@ -20,18 +20,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['token'])) {
         $name = $_POST['name'];
         $phone = $_POST['phone'];
         $email = $_POST['email'];
-        $message = $_POST['message'];
+        $location = $_POST['location'];
+        $service = $_POST['service'];
 
         $message = '<!DOCTYPE html><html><body>' .
             'Name: <strong>' . strip_tags($name) . '</strong><br>' .
             'Phone: <strong>' . strip_tags($phone) . '</strong><br>' .
             'Email Address: <strong>' . strip_tags($email) . '</strong><br>' .
-            'Message: <strong>' . strip_tags($message) . '</strong><br>';
+            'Location: <strong>' . strip_tags($location) . '</strong><br>' .
+            'Service: <strong>' . strip_tags($service) . '</strong>';
 
         $headers = "MIME-Version: 1.0\r\n" .
             "Content-type: text/html; charset=utf-8\r\n" .
             "From: " . $site . " <". $no_reply_email . ">" . "\r\n" .
-            "Bcc: " . $bcc_email . "\r\n" .
             "Reply-To: " . $site . " <". $no_reply_email . ">" . "\r\n" .
             "X-Mailer: PHP/" . phpversion();
         $result = mail($to, $subject, $message, $headers);
