@@ -4,7 +4,7 @@
 
 header {
     @include media-breakpoint-up(xl) {
-        background: imgUrl("banner.png") right top;
+        background: imgUrl("banner.webp") right top;
     }
 
     @include media-breakpoint-up(xl) {
