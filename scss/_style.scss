@@ -12,7 +12,7 @@ header {
     }
 
     @include media-breakpoint-up(xxl) {
-        background-size: right top;
+        background-position: right top;
     }
 
     .header-top-bar {

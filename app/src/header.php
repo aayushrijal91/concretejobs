@@ -33,7 +33,7 @@
 						</a>
 					</div>
 					<div class="col-6 d-md-none"><?= renderImg("master-builders.png", "logo") ?></div>
-					<div class="col-12 col-md-auto col-xl-7 col-xxl-6 pt-2 pt-md-0">
+					<div class="col-12 col-md-auto col-xl-7 pt-2 pt-md-0">
 						<div class="row justify-content-center justify-content-lg-between no-gutters align-items-center">
 							<div class="col-7 d-none d-lg-block">
 								<?= renderImg("master-builders.png", "logo") ?>
