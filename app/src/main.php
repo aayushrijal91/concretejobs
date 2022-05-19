@@ -46,6 +46,12 @@ include __DIR__ . '/header.php';
                                         <option>Polished Concrete</option>
                                         <option>Concrete Restoration</option>
                                         <option>Concrete Footpaths</option>
+                                        <option>Landscaping</option>
+                                        <option>Mini Excavations</option>
+                                        <option>Concrete Sealing</option>
+                                        <option>Concrete Retaining Walls</option>
+                                        <option>Concrete Flooring</option>
+                                        <option>Concrete Paving</option>
                                     </select>
                                 </div>
                                 <div class="col-12 col-lg-6 col-lg-4 py-2">
@@ -72,7 +78,7 @@ include __DIR__ . '/header.php';
                 <div class="row no-gutters justify-content-center">
                     <div class="col-auto px-1 px-xl-2">
                         <a href="tel:<?= $phone_number ?>" class="btn btn-block btn-primary rounded-0 text-black line-height-1 h9 fw-800 quick-contact-button">
-                            Book NOw
+                            Book Now
                         </a>
                     </div>
 
@@ -180,7 +186,7 @@ include __DIR__ . '/header.php';
                                     <div class="col-auto">
                                         <div class="primary-block"></div>
                                     </div>
-                                    <div class="col">Concrete driveway replacement</div>
+                                    <div class="col">Landscaping</div>
                                 </div>
                             </div>
                         </div>
@@ -193,7 +199,7 @@ include __DIR__ . '/header.php';
                                     <div class="col-auto">
                                         <div class="primary-block"></div>
                                     </div>
-                                    <div class="col">Concrete shed slabs</div>
+                                    <div class="col">Mini Excavations</div>
                                 </div>
                             </div>
                         </div>
@@ -206,7 +212,7 @@ include __DIR__ . '/header.php';
                                     <div class="col-auto">
                                         <div class="primary-block"></div>
                                     </div>
-                                    <div class="col">New Concrete driveways</div>
+                                    <div class="col">Concrete Sealing</div>
                                 </div>
                             </div>
                         </div>
@@ -219,7 +225,7 @@ include __DIR__ . '/header.php';
                                     <div class="col-auto">
                                         <div class="primary-block"></div>
                                     </div>
-                                    <div class="col">Polished concrete</div>
+                                    <div class="col">Concrete Retaining Walls</div>
                                 </div>
                             </div>
                         </div>
@@ -232,7 +238,7 @@ include __DIR__ . '/header.php';
                                     <div class="col-auto">
                                         <div class="primary-block"></div>
                                     </div>
-                                    <div class="col">Concrete restoration</div>
+                                    <div class="col">Concrete Flooring</div>
                                 </div>
                             </div>
                         </div>
@@ -245,7 +251,7 @@ include __DIR__ . '/header.php';
                                     <div class="col-auto">
                                         <div class="primary-block"></div>
                                     </div>
-                                    <div class="col">Concrete footpaths</div>
+                                    <div class="col">Concrete Paving</div>
                                 </div>
                             </div>
                         </div>
