@@ -180,7 +180,7 @@ include __DIR__ . '/header.php';
                 <div class="row">
                     <div class="col-md-6 col-lg-4 py-3" data-aos="fade-up">
                         <div class="service-card">
-                            <?= renderImg("service-1.png", "lib", "w-100") ?>
+                            <?= renderImg("service-7.png", "lib", "w-100") ?>
                             <div class="service-caption">
                                 <div class="row no-gutters align-items-center">
                                     <div class="col-auto">
@@ -206,7 +206,7 @@ include __DIR__ . '/header.php';
                     </div>
                     <div class="col-md-6 col-lg-4 py-3" data-aos="fade-up">
                         <div class="service-card">
-                            <?= renderImg("service-3.png", "lib", "w-100") ?>
+                            <?= renderImg("service-9.png", "lib", "w-100") ?>
                             <div class="service-caption">
                                 <div class="row no-gutters align-items-center">
                                     <div class="col-auto">
@@ -219,7 +219,7 @@ include __DIR__ . '/header.php';
                     </div>
                     <div class="col-md-6 col-lg-4 py-3" data-aos="fade-up">
                         <div class="service-card">
-                            <?= renderImg("service-4.png", "lib", "w-100") ?>
+                            <?= renderImg("service-10.png", "lib", "w-100") ?>
                             <div class="service-caption">
                                 <div class="row no-gutters align-items-center">
                                     <div class="col-auto">
@@ -232,7 +232,7 @@ include __DIR__ . '/header.php';
                     </div>
                     <div class="col-md-6 col-lg-4 py-3" data-aos="fade-up">
                         <div class="service-card">
-                            <?= renderImg("service-5.png", "lib", "w-100") ?>
+                            <?= renderImg("service-11.png", "lib", "w-100") ?>
                             <div class="service-caption">
                                 <div class="row no-gutters align-items-center">
                                     <div class="col-auto">
@@ -245,7 +245,7 @@ include __DIR__ . '/header.php';
                     </div>
                     <div class="col-md-6 col-lg-4 py-3" data-aos="fade-up">
                         <div class="service-card">
-                            <?= renderImg("service-6.png", "lib", "w-100") ?>
+                            <?= renderImg("service-12.png", "lib", "w-100") ?>
                             <div class="service-caption">
                                 <div class="row no-gutters align-items-center">
                                     <div class="col-auto">
@@ -272,8 +272,9 @@ include __DIR__ . '/header.php';
 <section class="color-range">
     <div class="container">
         <div class="row justify-content-between align-items-center py-5">
-            <div class="col-auto col-lg-6 text-uppercase h2 fw-900 line-height-1 letter-spacing-n02" data-aos="fade-right">
-                <div class="text-white">We Have a wide range <span class="text-primary">of concrete colours</span></div>
+            <div class="col-auto col-lg-6 text-uppercase line-height-1 letter-spacing-n02" data-aos="fade-right">
+                <div class="text-white h2 fw-900">We Have a wide range <span class="text-primary">of concrete colours</span></div>
+                <a href="./assets/file/Concrete_Colour_Chart.pdf" target="_blank" class="btn p-0 rounded-0 text-white fw-500 h13"><?= renderImg("download.png","icons", "pr-3") ?>Download Concrete Colour Chart</a>
             </div>
             <div class="col-auto" data-aos="fade-left">
                 <div class="row no-gutters justify-content-center pt-3 pt-md-4 pt-xl-0">
