@@ -296,24 +296,39 @@ include __DIR__ . '/header.php';
         <div class="row">
             <div class="col-12 col-xl-9 px-0 px-md-3 pb-3 pb-md-4 pb-xl-0">
                 <div class="color-range-slider">
-                    <div class="color-range-slider-content range-1">
+                    <div class="color-range-slider-content">
                         <?= renderImg("charcoal.png", "lib") ?>
                     </div>
-                    <div class="color-range-slider-content range-2">
+                    <div class="color-range-slider-content">
                         <?= renderImg("jet-black.png", "lib") ?>
                     </div>
-                    <div class="color-range-slider-content range-3">
+                    <div class="color-range-slider-content">
                         <?= renderImg("graphite.png", "lib") ?>
                     </div>
-                    <div class="color-range-slider-content range-4">
+                    <div class="color-range-slider-content">
                         <?= renderImg("grey-mist.png", "lib") ?>
+                    </div>
+                    <div class="color-range-slider-content">
+                        <?= renderImg("snow.jpg", "lib") ?>
+                    </div>
+                    <div class="color-range-slider-content">
+                        <?= renderImg("stallion.jpg", "lib") ?>
+                    </div>
+                    <div class="color-range-slider-content">
+                        <?= renderImg("pewter.jpg", "lib") ?>
+                    </div>
+                    <div class="color-range-slider-content">
+                        <?= renderImg("cork.jpg", "lib") ?>
+                    </div>
+                    <div class="color-range-slider-content">
+                        <?= renderImg("cobalt-blue.jpg", "lib") ?>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-xl-3">
-                <div class="row no-gutters">
+                <div class="row no-gutters range-buttons-wrapper">
                     <div class="col-12 col-md-6 col-xl-12 px-md-2 px-xl-0">
-                        <div class="color-range-nav-button range-button-1 active mb-4">
+                        <div class="color-range-nav-button active mb-4" drange="1">
                             <div class="d-flex align-items-center">
                                 <div class="primary-block"></div>
                                 <div class="pl-4">Charcoal</div>
@@ -321,7 +336,7 @@ include __DIR__ . '/header.php';
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-xl-12 px-md-2 px-xl-0">
-                        <div class="color-range-nav-button range-button-2 mb-4">
+                        <div class="color-range-nav-button mb-4" drange="2">
                             <div class="d-flex align-items-center">
                                 <div class="primary-block"></div>
                                 <div class="pl-4">Jet Black</div>
@@ -329,7 +344,7 @@ include __DIR__ . '/header.php';
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-xl-12 px-md-2 px-xl-0">
-                        <div class="color-range-nav-button range-button-3 mb-4">
+                        <div class="color-range-nav-button mb-4" drange="3">
                             <div class="d-flex align-items-center">
                                 <div class="primary-block"></div>
                                 <div class="pl-4">Graphite</div>
@@ -337,10 +352,50 @@ include __DIR__ . '/header.php';
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-xl-12 px-md-2 px-xl-0">
-                        <div class="color-range-nav-button range-button-4 mb-4">
+                        <div class="color-range-nav-button mb-4" drange="4">
                             <div class="d-flex align-items-center">
                                 <div class="primary-block"></div>
                                 <div class="pl-4">Grey Mist</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-12 px-md-2 px-xl-0">
+                        <div class="color-range-nav-button mb-4" drange="5">
+                            <div class="d-flex align-items-center">
+                                <div class="primary-block"></div>
+                                <div class="pl-4">Snow</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-12 px-md-2 px-xl-0">
+                        <div class="color-range-nav-button mb-4" drange="6">
+                            <div class="d-flex align-items-center">
+                                <div class="primary-block"></div>
+                                <div class="pl-4">Stallion</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-12 px-md-2 px-xl-0">
+                        <div class="color-range-nav-button mb-4" drange="7">
+                            <div class="d-flex align-items-center">
+                                <div class="primary-block"></div>
+                                <div class="pl-4">Pewter</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-12 px-md-2 px-xl-0">
+                        <div class="color-range-nav-button mb-4" drange="8">
+                            <div class="d-flex align-items-center">
+                                <div class="primary-block"></div>
+                                <div class="pl-4">Cork</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-12 px-md-2 px-xl-0">
+                        <div class="color-range-nav-button mb-4" drange="9">
+                            <div class="d-flex align-items-center">
+                                <div class="primary-block"></div>
+                                <div class="pl-4">Cobalt Blue</div>
                             </div>
                         </div>
                     </div>

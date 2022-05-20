@@ -46,85 +46,15 @@ $(() => {
         arrows: false,
         slidesToScroll: 1,
     });
+
     AOS.refresh();
-    $('.range-button-1').on('click', function () {
-        colorRangeSlider.slick('slickGoTo', 0);
+
+    $('.color-range-nav-button').on('click', function () {
+        let drange = $(this).attr('drange') - 1; 
+        colorRangeSlider.slick('slickGoTo', drange);
+        $('.color-range-nav-button').removeClass('active');
         $(this).addClass('active');
-        $('.range-button-2').removeClass('active');
-        $('.range-button-3').removeClass('active');
-        $('.range-button-4').removeClass('active');
     });
 
-    $('.range-button-2').on('click', function () {
-        colorRangeSlider.slick('slickGoTo', 1);
-        $(this).addClass('active');
-        $('.range-button-1').removeClass('active');
-        $('.range-button-3').removeClass('active');
-        $('.range-button-4').removeClass('active');
-    });
-
-    $('.range-button-3').on('click', function () {
-        colorRangeSlider.slick('slickGoTo', 2);
-        $(this).addClass('active');
-        $('.range-button-1').removeClass('active');
-        $('.range-button-2').removeClass('active');
-        $('.range-button-4').removeClass('active');
-    });
-
-    $('.range-button-4').on('click', function () {
-        colorRangeSlider.slick('slickGoTo', 3);
-        $(this).addClass('active');
-        $('.range-button-1').removeClass('active');
-        $('.range-button-2').removeClass('active');
-        $('.range-button-3').removeClass('active');
-    });
     AOS.refresh();
-    var currentRangeTab = 1;
-    var rangeTabUpperLimit = 3;
-    $('.color-range-slider .slick-next').on('click', function (e) {
-        currentRangeTab += 1;
-
-        if (currentRangeTab > rangeTabUpperLimit) {
-            currentRangeTab = 1;
-        }
-
-        changeActiveProcessNav();
-    });
-
-    $('.color-range-slider .slick-prev').on('click', function (e) {
-        currentRangeTab -= 1;
-
-        if (currentRangeTab === 0) {
-            currentRangeTab = rangeTabUpperLimit;
-        }
-
-        changeActiveProcessNav();
-    });
-    AOS.refresh();
-    function changeActiveProcessNav() {
-        if (currentRangeTab === 1) {
-            $('.range-button-1').addClass('active');
-            $('.range-button-2').removeClass('active');
-            $('.range-button-3').removeClass('active');
-            $('.range-button-4').removeClass('active');
-        }
-        else if (currentRangeTab === 2) {
-            $('.range-button-1').removeClass('active');
-            $('.range-button-2').addClass('active');
-            $('.range-button-3').removeClass('active');
-            $('.range-button-4').removeClass('active');
-        }
-        else if (currentRangeTab === 3) {
-            $('.range-button-1').removeClass('active');
-            $('.range-button-2').removeClass('active');
-            $('.range-button-3').addClass('active');
-            $('.range-button-4').removeClass('active');
-        }
-        else if (currentRangeTab === 4) {
-            $('.range-button-1').removeClass('active');
-            $('.range-button-2').removeClass('active');
-            $('.range-button-3').removeClass('active');
-            $('.range-button-4').addClass('active');
-        }
-    }
 })
